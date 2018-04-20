@@ -1,0 +1,119 @@
+.lighter{
+  background: #EEEFF3;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .lighter-main{
+    .lighter-play-board{
+      margin-bottom: 20px;
+      .lighter-play-board-row{
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .lighter-right{
+    width: 30%;
+    .lighter-func{
+      margin-bottom: 20px;
+      .lighter-func-box{
+        background: #fffae7;
+        display: flex;
+        padding: 10px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .lighter-step{
+    height: 50px;
+    width: 50px;
+    background: #6CBDFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    position: relative;
+    color: white;
+    img{
+      width: 45px;
+    }
+    &:hover{
+      background: #007BFF;
+    }
+  }
+  .lighter-step-active{
+    background: #007BFF;
+  }
+  .lighter-point{
+    height: 50px;
+    width: 50px;
+    background: #C0C7D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E4E7ED;
+    margin: 1px;
+    position: relative;
+    .lighter-position{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top:0;
+      bottom: 0;
+      img{
+        width: 45px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .lighter-position-left{
+      img{
+        transform: rotate(0);
+      }
+    }
+    .lighter-position-right{
+      img{
+        transform: rotate(180deg);
+      }
+    }
+    .lighter-position-up{
+      img{
+        transform: rotate(90deg);
+      }
+    }
+    .lighter-position-down{
+      img{
+        transform: rotate(-90deg);
+      }
+    }
+    .lighter-bug{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top:0;
+      bottom: 0;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      img{
+        width: 30px;
+
+      }
+    }
+    .lighter-lighted{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top:0;
+      bottom: 0;
+      background: #7BC600;
+    }
+  }
+  .lighter-point-disabled{
+    background: transparent;
+    border-color: transparent;
+  }
+
+}
